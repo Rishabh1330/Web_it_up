@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #A18167; padding-left: 10px;padding-right: 10px;">
+        <div class="container-fluid" >
+            <a href="index.html"><img src="./images/logo.png" alt="Bootstrap" width="70" height="70"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" ><a class="nav-link" href="product-details.html"><img src="./images/box.png" width="50" height="50"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html" ><img src="./images/cart_logo.png" width="50" height="50"></a></li>
+                    <li class="nav-link"><br></li>
+                    <li class="nav-item"><a class="nav-link" href="admin.html"><img src="./images/setting.png" width="50" height="50"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-products">
+		<div class="container">
+				<div class="row justify-content-center text-center">
+						<div class="col-md-8 col-lg-6">
+								<div class="header">
+										<h3>Featured Product</h3>
+										<h2>Popular Products</h2>
+								</div>
+						</div>
+				</div>
+				<div class="row">
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; flex-wrap:wrap;display: flex; center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+								<div id="product-1" class="single-product">
+                                    <div class="part-1">
+                                            <img class="imag" src="./images/Laptopimage.jpeg">
+												<ul>
+														<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+														<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+														<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Laptop</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+                                                <img class="imag" src="./images/Tshirt.png" style="border: 3px solid black; border-radius: 3%;">
+												<ul >
+													<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+													<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+													<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+											</ul>
+										</div>
+										<div class="part-2" >
+												<h3 class="product-title">T-shirt</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem;border-radius: 3%;">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+                                            <img class="imag" src="./images/indoor_plant.png" >
+											<ul>
+												<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+												<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+												<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+										</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Indoor Plant</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+                                            <img class="imag" src="./images/Earbuds.png">
+												<span class="new">new</span>
+												<ul>
+													<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+													<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+													<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+											</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Wireless Earbuds</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+                                            <img class="imag" src="./images/smartphone.png">
+											<ul>
+												<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+												<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+												<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+										</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title"> Oppo Smartphone</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem;border-radius: 3%;">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+                                                <img class="imag" src="./images/Tablets.png">
+												<ul>
+													<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+													<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+													<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+											</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Vitamin C Tablets</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem;border-radius: 3%;">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+                                            <img class="imag" src="./images/Shoes.png">
+											<ul>
+												<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+												<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+												<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+										</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Running Shoes</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+                                              <img class="imag" src="./images/Blender.png">
+												<span class="new">new</span>
+												<ul>
+													<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+													<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+													<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+											</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Blender</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+							<div id="product-4" class="single-product">
+									<div class="part-1">
+										  <img class="imag" src="./images/Blender.png">
+											<span class="new">new</span>
+											<ul>
+												<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+												<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+												<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+										</ul>
+									</div>
+									<div class="part-2">
+											<h3 class="product-title">Blender</h3>
+											<h4 class="product-price">$49.99</h4>
+									</div>
+							</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+						<div id="product-4" class="single-product">
+								<div class="part-1">
+									  <img class="imag" src="./images/Blender.png">
+										<span class="new">new</span>
+										<ul>
+											<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+											<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+											<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+									</ul>
+								</div>
+								<div class="part-2">
+										<h3 class="product-title">Blender</h3>
+										<h4 class="product-price">$49.99</h4>
+								</div>
+						</div>
+				</div>
+				<div class="col-md-6 col-lg-4 col-xl-3 " style="border: 3px solid black; display: flex;align-items: center;justify-content: center;padding-top: 1.5rem;margin: 0.15rem; border-radius: 3%;">
+					<div id="product-4" class="single-product">
+							<div class="part-1">
+								  <img class="imag" src="./images/Blender.png">
+									<span class="new">new</span>
+									<ul>
+										<li><a href="./cart.html" onclick="addToCart()"><img src="./images/cart_logo.png" height="20" ></a></li>
+										<li><a href="#" onclick=""><i class="fas fa-heart"><img src="./images/plus.png" height="20"></i></a></li>
+										<li><a href="#"><i class="fas fa-plus"><img src="./images/heart.png" height="20"></i></a></li>
+								</ul>
+							</div>
+							<div class="part-2">
+									<h3 class="product-title">Blender</h3>
+									<h4 class="product-price">$49.99</h4>
+							</div>
+					</div>
+			</div>
+				</div>
+		</div>
+</section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
